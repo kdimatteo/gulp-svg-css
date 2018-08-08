@@ -77,6 +77,7 @@ module.exports = function (options) {
         cssRule.push(options.cssSelector + options.cssPrefix + normalizedFileName + '::after {');
         cssRule.push('    background-image: url("data:image/svg+xml;charset=utf8, ' + encodedSvg + '");');
         cssRule.push('    content: "";');
+        cssRule.push('    position: absolute;');
         cssRule.push('    display: "inline-block";');
 
         if (options.addSize) {
