@@ -76,7 +76,6 @@ module.exports = function (options) {
         var cssRule = [];
         cssRule.push(options.cssSelector + options.cssPrefix + normalizedFileName + '::before {');
         cssRule.push('    content: url("data:image/svg+xml;charset=utf8, ' + encodedSvg + '");');
-        cssRule.push('    display: "inline-block";');
 
         if (options.addSize) {
             cssRule.push('    width: ' + width + ';');
